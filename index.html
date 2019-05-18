@@ -17,26 +17,30 @@
                  }
    </script>
 	
-<style type="text/css">
-    #vertical{ 
-        position:absolute; 
-        top:100%;  
-        left:0; 
+<style type="text/css"> 
+    #container {     
+        display:table;     
+        border-collapse:collapse;   
+        height:300px;   
         width:100%; 
-        text-align:center;
-    } 
-    #container {
-        position:relative;
-        height:25px;
-        border:0px solid #000;
-    }
-</style>         
-<div id="container"> 
-    <div id="vertical"> 
-        <font color="white"><i>♪ Play that noteblock nicely ♪</i></font> 
-    </div>               
+        border:0px solid #000; 
+    }          
+    #layout {     
+        display:table-row;    
+    }            
+    #content {     
+        display:table-cell;   
+        text-align:center;  
+        vertical-align:middle;     
+    }            
+</style>      
+<div id="container">     
+    <div id="layout">     
+        <div id="content">  
+            <font color="white"><i>♪ Play that noteblock nicely ♪</i></font>   
+        </div>      
+    </div>    
 </div> 
-
 
 
 <style>
