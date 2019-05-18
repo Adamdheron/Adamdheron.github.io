@@ -16,33 +16,27 @@
        audio.play();
                  }
    </script>
-	
-<style type="text/css"> 
-    #container {     
-        display:table;     
-        border-collapse:collapse;   
-        height:500px;   
+
+<style type="text/css">
+    #vertical{ 
+        position:absolute; 
+        top:50%; /* adjust this as needed */     
+        left:0; 
         width:100%; 
-        border:0px solid #000; 
-    }          
-    #layout {     
-        display:table-row;    
-    }            
-    #content {     
-        display:table-cell;   
-        text-align:center;  
-        vertical-align:middle;     
-    }            
-</style>      
-<div id="container">     
-    <div id="layout">     
-        <div id="content">  
-            <font color="white"><i>♪ Play that noteblock nicely ♪</i></font>   
-        </div>      
-    </div>    
-</div> 
-
-
+        text-align:center;
+    } 
+    #container {
+        position:relative;
+        height:200px;
+        border:0px solid #000;
+    }
+</style>         
+<div id="container"> 
+    <div id="vertical"> 
+        <font color="white"><i>♪ Play that noteblock nicely ♪</i></font> 
+    </div>               
+</div> 	
+	
 <style>
   body {
     background-color: #070707;
