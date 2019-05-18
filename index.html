@@ -18,15 +18,26 @@
    </script>
 	
 <div><font color="white"><i>♪ Play that noteblock nicely ♪</i></font></div>
-	#content {
-  background: #06c;
-  width: 120px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  top: 80%;
-  transform: translateY(-50%);
-}
+	
+<style type="text/css">
+    #vertical{ 
+        position:absolute; 
+        top:50%; /* adjust this as needed */     
+        left:0; 
+        width:100%; 
+        text-align:center;
+    } 
+    #container {
+        position:relative;
+        height:200px;
+        border:1px solid #000;
+    }
+</style>         
+<div id="container"> 
+    <div id="vertical"> 
+        <font color="white"><i>♪ Play that noteblock nicely ♪</i></font> 
+    </div>               
+</div> 
 
 
 
