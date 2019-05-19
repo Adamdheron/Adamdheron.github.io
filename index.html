@@ -11,6 +11,10 @@
 <audio id="audio" src="Note1.ogg" ></audio>
 </map>
 	
+<div class='fullscreenDiv'>
+    <div class="center"><font color="white"><i>♪ Play that noteblock nicely ♪</i></font></div>
+</div>​
+	
     <script>
   function play(){
        var audio = document.getElementById("audio");
@@ -31,3 +35,13 @@
     bottom:0;
     margin:auto;
 }
+
+.center {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -95px; /* margin is -0.5 * dimension */
+    margin-top: 180px; 
+}​
