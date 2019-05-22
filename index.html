@@ -11,7 +11,7 @@
 </p>
 </div>	
 	
-	<div><img src="https://i.imgur.com/VRnv0SH.png" alt="Note Block" usemap="#NoteBlockMap"></div>
+	<div><img src="https://NoteBlock.png" alt="Note Block" usemap="#NoteBlockMap"></div>
 <map name="NoteBlockMap">
   <area shape="poly" coords="134,0,268,66,268,230,134,296,0,230,0,66" onclick="play()">
 <audio id="audio" src="Note1.ogg" snd.currentTime=0;></audio>
@@ -38,7 +38,8 @@
     left:0;
     right:0;
     bottom:0;
-    margin:auto;
+    margin:auto; 
+    z-index: 1;
 }
 
 .center {
@@ -60,7 +61,7 @@ div.image-container {
     height: 100%;
     bottom: 0;
     background-color: #fff; 
-    z-index: 999999;
+    z-index: 2;
     text-align: center;
 }
 
