@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adamheron</title>
+	
+	<!-- Light mode favicon -->
+<link rel="icon" href="UI/favicon-light.png" media="(prefers-color-scheme: light)">
+
+<!-- Dark mode favicon -->
+<link rel="icon" href="UI/favicon-dark.png" media="(prefers-color-scheme: dark)">
  
 <link href="//fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet" type="text/css">   
 
-  <style type="text/css">  
+
+<style type="text/css">  
 body {
 background:#fbf7ec url() fixed;
 text-align:left;
@@ -16,6 +23,47 @@ letter-spacing:1px;
 line-height:1.3;
 font:10px calibri, tahoma;
 color:#444;}
+
+.site-title {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.site-bodytext {
+  text-align: center;
+  margin: 0px 0 0px;
+  font-size: 14px;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: center;  /* center buttons horizontally */
+  gap: 20px;                /* space between buttons */
+  margin: 20px 0;           /* spacing above and below */
+}
+
+.top-buttons .btn {
+  background: none;         /* remove background */
+  border: none;             /* remove border */
+  color: #000;              /* text color */
+  font-weight: bold;         /* bold text */
+  text-decoration: underline; /* underlined text */
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;               /* remove default button padding */
+}
+
+.top-buttons .btn:hover {
+  opacity: 0.7;             /* subtle hover effect */
+}
+
+/* Disabled (current page) button */
+.top-buttons .btn.disabled {
+  opacity: 0.4;             /* semi-transparent */
+  cursor: default;          /* normal cursor */
+  pointer-events: none;     /* not clickable */
+}
+
 
 .title {text-transform:uppercase; font:10px calibri, 'raleway', arial; color:#000;line-height:16px;border-bottom:1px solid #888;margin-bottom:4px;letter-spacing:2px;}
 .box {background:#fff;padding:4px;margin-bottom:4px;border-bottom:1px dashed #EEC1B3;}
@@ -28,46 +76,38 @@ text-align:center;margin-bottom:4px;letter-spacing:3px;}
   justify-content: center;   /* centres both grids together */
   align-items: flex-start;   /* tops align */
 }
-
 .grid-wrapper {
   max-width: 580px;         
 }
-
 .single-wrapper {
   max-width: 320px;          /* fits one image */
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 10px;
   padding: 25px;
 }
-
 .single-grid {
   display: grid;
   grid-template-columns: 1fr;   /* one column */
   gap: 10px;
   padding: 25px;
 }
-
-
 .item {
   width: 100%; /* ensures grid controls the width */
 }
-
 .box {
   background-color: #f0f0f0;
   padding: 10px;
 }
-
 .title img {
   vertical-align: middle;
   margin-right: 5px;
 }
 
 
-/* MOBILE LAYOUT FIX */
+/* MOBILE LAYOUT */
 @media (max-width: 768px) {
 
   /* Stack the two columns */
@@ -108,107 +148,115 @@ text-align:center;margin-bottom:4px;letter-spacing:3px;}
   
   <body>
 	
+	<h1 class="site-title">adamheron.co.uk</h1>
+	
+  <div class="top-buttons">
+  <button class="btn disabled">picture</button>
+  <button class="btn">video</button>
+  </div>
+
+	<h1 class="site-bodytext">media 25% resolution</h1>
+		
     <div class="grids-row">
 	
 	<div class="single-wrapper">
     <div class="single-grid">
     
     <div class="item">
-    <img src="Flower.jpg" alt="x" width="320">
+    <img src="images/Flower.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Rose</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Rose</div>
     Clevedon, Somerset, England, Canon AE1, Canon 50mm 1:1.8, Portra 400.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="CatPar.jpg" alt="x" width="320">
+    <img src="images/CatPar.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Cat</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Cat</div>
     Par, Cornwall, England, Canon AE1, Canon 50mm 1:1.8, Portra 400.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Hydrangeas.jpg" alt="x" width="320">
+    <img src="images/Hydrangeas.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Hydrangeas</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Hydrangeas</div>
     Clevedon, Somerset, England, Canon AE1, Canon 50mm 1:1.8, Portra 400.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="CavePurple.jpg" alt="x" width="320">
+    <img src="images/CavePurple.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Purple Cave</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Purple Cave</div>
     Cheddar Gorge, Somerset, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="CaveRed.jpg" alt="x" width="320">
+    <img src="images/CaveRed.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Red Cave</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Red Cave</div>
     Cheddar Gorge, Somerset, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Pigeon.jpg" alt="x" width="320">
+    <img src="images/Pigeon.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Pigeon</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Pigeon</div>
     Clevedon, Somerset, England, Canon AE1, Canon 50mm 1:1.8, Kodak Colorplus 200.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Villa.jpg" alt="x" width="320">
+    <img src="images/Villa.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Barangay Hall</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Barangay Hall</div>
     Mahayahay, Sogod, Philippines, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Street.jpg" alt="x" width="320">
+    <img src="images/Street.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Street</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Street</div>
     Clevedon, Somerset, England, Canon AE1, Canon 50mm 1:1.8, Portra 400.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Van.jpg" alt="x" width="320">
+    <img src="images/Van.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Van</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Van</div>
     Clevedon, Somerset, England, Canon AE1, Canon 50mm 1:1.8, Portra 400.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Museum.jpg" alt="x" width="320">
+    <img src="images/Museum.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Gallery</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Gallery</div>
     National Gallery, London, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Lake.jpg" alt="x" width="320">
+    <img src="images/Lake.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Lake</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Lake</div>
     Laggan Dam, Lochaber, Scotland, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Sky.jpg" alt="x" width="320">
+    <img src="images/Sky.jpg" alt="x" width="320">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Sky</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Sky</div>
     Clevedon, Somerset, England, Canon AE1, Canon 50mm 1:1.8, Kodak Colorplus 200.
     </div>
     </div>
-
 
     </div>
     </div>
@@ -218,133 +266,132 @@ text-align:center;margin-bottom:4px;letter-spacing:3px;}
 	<div class="grid-container">
 	
     <div class="item">
-    <img src="malasea.jpg" alt="x" width="290">
+    <img src="images/malasea.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Sea</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Sea</div>
     Malapascua Island, Logon, Philippines, Canon AE1, Canon 50mm 1:1.8, Kodak Colorplus 200.
     </div>
     </div>
 
   <div class="item">
-    <img src="LagganDam.jpg" alt="x" width="290">
+    <img src="images/LagganDam.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Dam</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Dam</div>
     Laggan Dam, Lochaber, Scotland, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
   
     <div class="item">
-    <img src="CheddarShop.jpg" alt="x" width="290">
+    <img src="images/CheddarShop.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Cheddar Shop</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Cheddar Shop</div>
     Cheddar Gorge, Somerset, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 
     <div class="item">
-    <img src="CheddarHouse.jpg" alt="x" width="290">
+    <img src="images/CheddarHouse.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Cheddar House</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Cheddar House</div>
     Cheddar Gorge, Somerset, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="CheddarStreet.jpg" alt="x" width="290">
+    <img src="images/CheddarStreet.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Cheddar Street</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Cheddar Street</div>
     Cheddar Gorge, Somerset, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 
 	<div class="item">
-    <img src="Strawberry.jpg" alt="x" width="290">
+    <img src="images/Strawberry.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Strawberry</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Strawberry</div>
     Cheddar, Somerset, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Cave.jpg" alt="x" width="290">
+    <img src="images/Cave.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Cave</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Cave</div>
     Cheddar Gorge, Somerset, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Sea.jpg" alt="x" width="290">
+    <img src="images/Sea.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Sea</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Open Sea</div>
     Cebu/Leyte Sea, Philippines, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Boat.jpg" alt="x" width="290">
+    <img src="images/Boat.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Boat</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Boat</div>
     Malapascua Island, Logon, Philippines, Canon AE1, Canon 50mm 1:1.8, Kodak Colorplus 200
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Wire.jpg" alt="x" width="290">
+    <img src="images/Wire.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Street Wires</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Street Wires</div>
     Katipunan Street, Cebu City, Philippines, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Car.jpg" alt="x" width="290">
+    <img src="images/Car.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Car</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Car</div>
     Lawnmarket, Edinburgh, Scotland, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Castle.jpg" alt="x" width="290">
+    <img src="images/Castle.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Castle</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Castle</div>
     Edinburgh Castle, Edinburgh, Scotland, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Palace.jpg" alt="x" width="290">
+    <img src="images/Palace.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Palace</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Palace</div>
     Buckingham Palace, London, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Viaduct.jpg" alt="x" width="290">
+    <img src="images/Viaduct.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Viaduct</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Viaduct</div>
     Glenfinnan Viaduct, Glenfinnan, Scotland, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="church.jpg" alt="x" width="290">
+    <img src="images/church.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Cathedral</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Cathedral</div>
     Southwark Cathedral, London, England, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
 	
 	<div class="item">
-    <img src="Dam.jpg" alt="x" width="290">
+    <img src="images/Dam.jpg" alt="x" width="290">
     <div class="box">
-    <div class="title"><img src="FlowerIcon.gif" alt="x"> Dam alt</div>
+    <div class="title"><img src="UI/FlowerIcon.gif" alt="x"> Dam alt</div>
     Laggan Dam, Lochaber, Scotland, Lumix GH5s, G X Vario 12-35mm 1:2.8.
     </div>
     </div>
-	
 	
 </div>
 </div>
